@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>特萨销量分析</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header><h1>🧋 特萨 · 销量数据分析平台</h1><p>基于 Python+MySQL+Flask+ECharts | 2026暑假</p></header>
+    <section class="kpi-section">
+        <div class="kpi-card" id="kpi-total-sales"><div class="kpi-label">总销量</div><div class="kpi-value">--</div></div>
+        <div class="kpi-card" id="kpi-total-revenue"><div class="kpi-label">总营收</div><div class="kpi-value">--</div></div>
+        <div class="kpi-card" id="kpi-records"><div class="kpi-label">记录条数</div><div class="kpi-value">--</div></div>
+        <div class="kpi-card" id="kpi-member-ratio"><div class="kpi-label">会员占比</div><div class="kpi-value">--</div></div>
+    </section>
+    <section class="charts-grid">
+        <div class="chart-box"><h3>📈 月度销量趋势</h3><div class="chart-container" id="monthlyChart"></div></div>
+        <div class="chart-box"><h3>🏆 产品销量排名</h3><div class="chart-container" id="productChart"></div></div>
+        <div class="chart-box"><h3>🏙️ 城市销量排名</h3><div class="chart-container" id="cityChart"></div></div>
+        <div class="chart-box"><h3>🌸 季节对比</h3><div class="chart-container" id="seasonChart"></div></div>
+        <div class="chart-box"><h3>🥤 产品类别占比</h3><div class="chart-container" id="categoryChart"></div></div>
+        <div class="chart-box"><h3>🔥 城市×产品热力图</h3><div class="chart-container" id="heatmapChart"></div></div>
+        <div class="chart-box"><h3>🎉 节假日 vs 非节假日</h3><div class="chart-container" id="holidayChart"></div></div>
+        <div class="chart-box"><h3>📢 营销活动效果</h3><div class="chart-container" id="campaignChart"></div></div>
+    </section>
+</div>
+<script src="charts.js"></script>
+</body>
+</html>
